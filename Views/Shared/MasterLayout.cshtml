@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="~/Content/StyleSheet1.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <table width="100%" border="1">
+            <tr>
+                <td id="adverd" colspan="3">
+                    <p style="color:#2a832e">freeship đơn từ 45k, giảm nhiều hơn cùng <span style="color:#2220d5"><b>FREESHIP</b></span> <b>XTRA</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" width="10%">
+                    <img src="~/Content/pics/maxresdefault (2).jpg" width="200" height="200" />
+                </td>
+                <td width="70%">
+                    <input type="text" id="srchbar" name="search" placeholder="freeship đơn từ 45k" />
+                    <input type="button" id="srchbarRESULT" name="RESULT" value="Tìm Kiếm" />
+                </td>
+                <td width="20%">
+                    <nav>
+                        <ul id="tk">
+                            <li><i class="fas fa-home"></i><a href="#">Trang chủ</a></li>
+                            <li><i class="far fa-smile"></i><a href="#">Tài khoản</a></li>
+                            <li><i class="fas fa-shopping-cart"></i><a href="#"> </a></li>
+                        </ul>
+                    </nav>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <nav>
+                            <ul id="belowsrchbar">
+                                <li><a href="#">điện gia dụng</a></li>
+                                <li><a href="#"> xe cộ </a></li>
+                                <li><a href="#"> em bé </a></li>
+                                <li><a href="#"> khỏe đẹp </a></li>
+                                <li><a href="#"> nhà cửa </a></li>
+                                <li><a href="#"> sách </a></li>
+                                <li><a href="#"> thể thao </a></li>
+                                <li><a href="#"> ensure </a></li>
+                                <li><a href="#"> ensure gold</a></li>
+                                <li><a href="#"> ensure nước </a></li>
+                                <li><a href="#"> boost optimum</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </td>
+                <td>
+                    <p id="GPS"><i class="fas fa-map-marker-alt"></i>Điểm giao:<a href="#">Q.1,P. Bến Nghệ,TP. Hồ Chí Minh</a></p>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main class="product-container">
+        <div class="product-image">
+            <img src="~/Content/images/combo-sua-abbott-glucerna-cho-nguoi-tieu-duong-lon-850g-1.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2>Lon Sữa Glucerna 800g/Ion - Tặng 2 gói dùng thử</h2>
+            <div class="rating">
+                <span>5.0</span> <span>★★★★★</span> <span>(438 đánh giá)</span>
+            </div>
+            <div class="price">1.034.550đ</div>
+            <button class="buy-button">Mua ngay</button>
+            <div class="shipping-info">
+                <h3>Thông tin vận chuyển</h3>
+                <p>Giao đến: Q.1, P. Bến Nghé, Hồ Chí Minh</p>
+                <p>NOW: Giao sớm nhất: <strong>2h</strong></p>
+                <p>Free ship 10k đơn từ 45k, Free ship 25k đơn từ 100k</p>
+            </div>
+            <div class="additional-info">
+                <h3>Dịch vụ bổ sung</h3>
+                <ul>
+                    <li>TikiCard</li>
+                    <li>Gói bảo hiểm</li>
+                    <li>Dịch vụ trả hàng</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

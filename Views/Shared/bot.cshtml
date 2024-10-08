@@ -1,0 +1,51 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Tiki Trading</h1>
+    </header>
+
+    <main class="product-container">
+        <div class="product-image">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2>Lon Sữa Glucerna 800g/Ion - Tặng 2 gói dùng thử</h2>
+            <div class="rating">
+                <span>5.0</span> <span>★★★★★</span> <span>(438 đánh giá)</span>
+            </div>
+            <div class="price">1.034.550đ</div>
+            <button class="buy-button">Mua ngay</button>
+            <div class="shipping-info">
+                <h3>Thông tin vận chuyển</h3>
+                <p>Giao đến: Q.1, P. Bến Nghé, Hồ Chí Minh</p>
+                <p>NOW: Giao sớm nhất: <strong>2h</strong></p>
+                <p>Free ship 10k đơn từ 45k, Free ship 25k đơn từ 100k</p>
+            </div>
+            <div class="additional-info">
+                <h3>Dịch vụ bổ sung</h3>
+                <ul>
+                    <li>TikiCard</li>
+                    <li>Gói bảo hiểm</li>
+                    <li>Dịch vụ trả hàng</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <p>&copy; 2024 Tiki Trading. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
